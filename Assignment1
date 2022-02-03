@@ -1,0 +1,92 @@
+def Start():
+    print("Dino is Wandering")
+    dino = True
+    ifWandering(dino)
+    ifEvading(dino)
+    ifEating(dino)
+    ifHunting(dino)
+    ifHealing(dino)
+    ifSentry(dino)
+    ifProtect(dino)
+    ifAttacking(dino)
+
+
+def ifWandering(dino):
+    if(dino == True):
+        print("Dino is Hunting")
+        dino = False
+        return dino
+    else:
+        print("Dino is Attacking")
+        dino = True
+        return dino
+
+def ifEvading(dino):
+    if(dino == True):
+        print("Dino is Healing")
+        dino = False
+    return dino
+
+def ifEating(dino):
+    if(dino == True):
+        print("dino is Wandering")
+        dino = False
+        return dino
+    else:
+        print("Dino is Eating")
+        dino = True
+        return dino
+
+
+def ifHunting(dino):
+    if (dino == True):
+        print("dino is Attacking")
+        dino = False
+        return dino
+    else:
+        print("Dino is Hunting")
+        dino = True
+        return dino
+
+def ifHealing(dino):
+    if (dino == True):
+        print("dino is Wandring")
+        dino = False
+        return dino
+    else:
+        print("Dino is Healing")
+        dino = True
+        return dino
+
+def ifSentry(dino):
+    if (dino == True):
+        print("dino is Attacking")
+        dino = False
+        return dino
+    else:
+        print("Dino is Sentry")
+        dino = True
+        return dino
+
+def ifProtect(dino):
+    if (dino == True):
+        print("dino is Attacking")
+        dino = False
+        return dino
+    else:
+        print("Dino is Protecting")
+        dino = True
+        return dino
+
+def ifAttacking(dino):
+    if (dino == True):
+        print("dino is Evading")
+        dino = False
+        return dino
+    else:
+        print("Dino is Attacking")
+        dino = True
+        return dino
+
+
+Start()
